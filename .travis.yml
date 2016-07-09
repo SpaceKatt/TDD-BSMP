@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - "4.4.6"
+# command to run tests
+script:
+  - npm install
+  - npm test
