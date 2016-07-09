@@ -2,8 +2,25 @@
 
 ## Emphasis has been placed on using a Test Driven Development process
 
-### This rework is intended to be a prototype for a future applications
+#### This rework is intended to be a prototype for a future applications
 
 Previous application displayed tight coupling, lack of documentation, and a
   lack of testing. Currently we are exploring our options and selecting a
   proper architecture for the continuation of the SMP effort.
+
+## Instructions
+
+To complete the following tasks, enter the bulleted points into a console
+  while looking at the project-root directory.
+
+#### Install Dependencies:
+
+  - npm install
+
+#### Run Tests:
+
+  - npm test
+
+#### Lint all files:
+
+  - standard

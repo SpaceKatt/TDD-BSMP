@@ -35,3 +35,38 @@ exports.binary_vector_creation_test = function (done) {
   })
   done()
 }
+
+exports.binary_vector_operations_test = function () {
+  var elements = [1, 2, 9, 4, 5]
+  describe('Vector operations:', function () {
+    it('Element correctly returned', function () {
+      var vector = BinaryVector.newOne(elements)
+      expect(vector.element(3)).to.deep.equal(9)
+    })
+
+    it('Element set correctly', function () {
+      var vector = BinaryVector.newOne(elements)
+      vector.setElement(3, 0)
+      expect(vector.element(3)).to.deep.equal(0)
+    })
+
+    it('Index correctly obtained', function () {
+      var vector = BinaryVector.newOne(elements)
+      var index = vector.indexOf(9)
+      expect(index).to.deep.equal(3)
+    })
+
+    it('Vector view displayed correctly', function () {
+      var vector = BinaryVector.newOne(elements)
+      var display = vector.view()
+      expect(display).to.deep.equal('[1, 2, 9, 4, 5]')
+    })
+
+    it('Vector elements being replaced', function () {
+      var vector = BinaryVector.newOne(elements)
+      var newElements = [0, 1, 0, 1, 0]
+      vector.setElements(newElements)
+      expect(vector.elements).to.deep.equal(newElements)
+    })
+  })
+}

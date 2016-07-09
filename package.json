@@ -1,5 +1,5 @@
 {
-  "name": "re-bsmp",
+  "name": "TDD-BSMP",
   "version": "1.0.0",
   "description": "Decoupling and testing previous work on the BSMP",
   "main": "index.js",
@@ -10,6 +10,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "standard" : "^7.1.2"
   }
 }
