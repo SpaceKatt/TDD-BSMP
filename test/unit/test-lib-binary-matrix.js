@@ -68,7 +68,7 @@ exports.binary_matrix_operations_test = function (done) {
     it('Single element set correctly', function () {
       var matrix = BinaryMatrix.newOne(elements)
       matrix.setElement(2, 2, 42)
-      expect(matrix.getElement(2,2)).to.deep.equal(42)
+      expect(matrix.getElement(2, 2)).to.deep.equal(42)
     })
 
     it('Row returned correctly', function () {
@@ -125,7 +125,7 @@ exports.binary_matrix_operations_test = function (done) {
 
     it('Map process is valid', function () {
       var matrix = BinaryMatrix.newOne(elements)
-      var resultMatrix = matrix.mapProcess(function(value, row, column) {
+      var resultMatrix = matrix.mapProcess(function (value, row, column) {
         return value * 2
       })
       var expectedElements = [[2, 4, 6],
